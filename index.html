@@ -1,0 +1,54 @@
+<!-- This is the syntax for a comment. -->
+<!--
+It can also be multiline just like
+this. -->
+
+<html> <!-- This is the opening tag for any website and it is needed. -->
+
+    <head> <!-- This is the head tag of where you would put all the meta information about the website such as the name, description, viewport, and etc. You also put your CSS files here which would help to style the website.
+                You can also specify JS files here, but it is not recommended since it could slow down the loading time of the website. However, it would not have as big as an overhead if you specify that it is async. -->
+
+        <title>Website Title</title> <!-- Title of the website. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"> <!-- This will set the user viewport so it sets the rules of the zoom of the website and whether if the user could zoom in or not -->
+        <meta name="description" content="Description of the website goes here.">
+        <meta charset="UTF-8"> <!-- Specifies encoding of the website. -->
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/main.css"/> <!-- How you link the CSS file to the website. -->
+
+        <!-- JS -->
+        <script async src="js/app.js"></script> <!-- This is how you asynchronously load your JS -->
+
+    </head>
+
+        <body> <!-- Where the main parts of the website go with additional divs. -->
+
+            <div> <!-- Blank div with no styling -->
+            </div>
+
+            <div class="class1"> <!-- Div where class1 specifies the styling of the div -->
+
+            </div>
+
+            <div id="someID"> <!-- Div with a specific ID associated with the ID in the css file -->
+
+            </div>
+
+            <div class="class1 class2" id="someID"> <!-- You can also have both with multiple classes.-->
+
+                <div> <!-- This is a nested div -->
+                    <center> <!-- Basically a div where everything is centered. -->
+
+                    </center>
+                </div>
+            </div>
+
+
+
+        </body>
+
+    <footer> <!-- Where the ending stuff goes for the website. You can add contact information, Javascript files, and edit the look of the bottom of the page.-->
+
+    </footer>
+
+</html>
