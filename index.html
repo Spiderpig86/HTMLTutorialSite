@@ -15,10 +15,29 @@ this. -->
 
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="css/main.css"/> <!-- How you link the CSS file to the website. -->
+        <!-- rel just states that the file is in relation with index.html. In this case, it is a CSS file. type also specifies the same thing -->
+
+        <!-- You can also write your CSS inline with HTML with these tags -->
+        <style>
+            * {
+                background-color: blue;
+                color: white;
+            }
+        </style>
+        
+        <!-- Example of Importing Fonts from Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
         <!-- JS -->
         <script async src="js/app.js"></script> <!-- This is how you asynchronously load your JS -->
-
+        
+        <!-- You can also specify scripts inline with HTML -->
+        <script>
+            // This will run when the page is loaded.
+            console.log("Webpage loading");
+            alert("Hi there :)");
+        </script>
     </head>
 
         <body> <!-- Where the main parts of the website go with additional divs. -->
@@ -38,7 +57,37 @@ this. -->
 
                 <div> <!-- This is a nested div -->
                     <center> <!-- Basically a div where everything is centered. -->
-
+                        
+                        <!-- Use spans if you want elements to be next to each other without CSS -->
+                        <span>Left</span><span>Shark</span>
+                        
+                        <!-- Paragraphs tags <p> will automatically insert line breaks upon closing the tag. -->
+                        <p>This is is some text.</p>
+                        <p>This is the text that goes under it.</p>
+                        
+                        <!-- LISTS -->
+                        <div id="someList"> <!-- I like to wrap my lists in a div so I can easily style it. You can style this into a navigation menu -->
+                            <!-- UNORDERED LIST, basically the <ul> tag -->
+                            <ul>
+                                <!-- In here you would add list items, or <li> -->
+                                <li>Apple</li>
+                                <li>Orange</li>
+                                <li>Banana</li>
+                            </ul>
+                            
+                            <!-- ORDERED LIST, numerical bullets -->
+                            <ol>
+                                <li>First</li>
+                                <li>Second</li>
+                                <li>Third</li>
+                            </ol>
+                            <!-- You can also specify which index the list starts in -->
+                            <ol start="50">
+                                <li>Half of 100</li>
+                                <li>Half of 102</li>
+                                <li>Half of 104</li>
+                            </ol>
+                        </div>
                     </center>
                 </div>
             </div>
@@ -48,7 +97,7 @@ this. -->
         </body>
 
     <footer> <!-- Where the ending stuff goes for the website. You can add contact information, Javascript files, and edit the look of the bottom of the page.-->
-
+        <script src="js/app.js"></script> <!-- This is how you synchronously load your JS -->
     </footer>
 
 </html>
