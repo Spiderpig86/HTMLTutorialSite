@@ -1,25 +1,25 @@
 <html>
-    
+
     <head>
         <title>Better Tutorial</title> <!-- Title of the website. -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"> <!-- This will set the user viewport so it sets the rules of the zoom of the website and whether if the user could zoom in or not -->
         <meta name="description" content="Description of the website goes here.">
         <meta charset="UTF-8"> <!-- Specifies encoding of the website. -->
-        
+
         <!-- CSS HERE -->
-        
-        
+        <link href="css/app.css" rel="stylesheet" type="text/css"/>
+
         <!-- GOOGLE FONTS -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        
+
         <!-- JS HERE -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> <!-- JQuery CDN -->
         <script async src="js/app.js"></script>
-        
+
     </head>
-    
+
     <body>
-        
+
         <!-- Landing Section -->
         <div id="landing" class="section">
             <div id="headbg"></div> <!-- Where the background image will go -->
@@ -27,36 +27,93 @@
             <!-- should be full height of user screen -->
             <!-- insert navbar somewhere -->
         </div>
-        
+
+        <div class="article">
         <!-- Talk about information in the <head> -->
         <div class="section">
             <!-- HTML section, website title, meta information, importing CSS, importing fonts, importing JS, CDN, inline CSS, inline JS -->
-            <h1>THE HEAD</h1>
-            <p>The head is the container for all head elements such as the wewbsite title, meta information including the website viewport and charset, scripts, css files including fonts and styles, and noscript tags.</p>
-            
+            <h2>The Head</h2>
+            <hr></hr> <!-- A divider to make title look good -->
+            <p>The head is the container for all head elements such as the website title, meta information including the website viewport and charset, scripts, css files including fonts and styles, and noscript tags.</p>
+
             <p>Sample header code below:</p>
-            
+
             <!-- Example Code -->
-            <div id="codeBlock">
-                
+            <div class="codeBlock">
+
             </div>
+
+            <!-- More information about the different tags and properties listed in the head -->
+            <div>
+              <h3>Title</h2>
+                <p>The most basic property that must be included in the website (well you don't have to include it but it just makes the website look bad) is the website title. You can simply enclose the name of the website between two title tags as shown below: </p>
+
+                <!-- Example code -->
+                <div class="codeBlock">
+
+                </div>
+
+                <p> NOTE: There can only be one title attribute for a website.</p>
+            </div>
+
+              <div id="meta">
+            <h3>Meta Attributes</h2>
+              <p>Meta attributes are attributes that define the properties within the website including keywords, description, the author, and other attributes. These properties are used by services like search engines to find out information about the website.</p>
+              <p>The basic syntax of specifying what information each meta tag should hold (general forn)
+
+              <!-- Example code -->
+              <div class="codeBlock">
+
+              </div>
+
+              <p>You can also set the website's charset like so:</p>
+
+              <!-- Example Code -->
+              <div class="codeBlock">
+
+              </div>
+
+              <div>
+                  <h3>Importing CSS</h3>
+                  <p>Within the header, you can easily link other CSS files within the same host or different locations.</p>
+                  <p>The purpose of CSS is to help developers style all the components of the webpage from color, shadows, size, animations, and many other properties.</p>
+                  <p>To import a CSS layout from a local or online host, just include the link tags and the file location:</p>
+
+                  <!-- Example code -->
+                  <div class="codeBlock">
+
+                  </div>
+
+                  <p>CSS can also be included inline without being stored in an external file. Usually the CSS would appear in the header in between two style tags.</p>
+
+                  <!-- Example code -->
+                  <div class="codeBlock">
+
+                  </div>
+
+              </div>
+
+
+          </div>
         </div>
-        
+
         <!-- Talk about information in the <body> -->
         <div class="section">
             <!-- Divs, center, tables, lists, images, links, flash/java applet?, etc -->
         </div>
-        
+
         <!-- Talk about information in the <footer> -->
         <div class="section">
             <!-- footer information, JS, Google Analytics, etc -->
         </div>
-        
+
         <!-- Talk about misc -->
         <div class="section">
             <!-- Iframes, other weird stuff, comments? -->
         </div>
-        
+
+      </div> <!-- article -->
+
     </body>
 
 </html>
